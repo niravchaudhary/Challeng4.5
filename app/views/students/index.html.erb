@@ -2,7 +2,7 @@
 <p>Find me in app/views/students/index.html.erb</p>
 
 <h2>This is a Index Page of Students</h2>
-<% @students.each do |_student| %>
-<p> Name: <%= link_to _student.firstname, list_path(_student) %> <%= link_to _student.lastname, list_path(_student) %></p>
+<% @students.each do |student| %>
+<%= render partial:'student', object: student %>
 <% end %>
  

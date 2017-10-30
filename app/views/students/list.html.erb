@@ -2,4 +2,4 @@
 <p>Find me in app/views/students/list.html.erb</p>
 
 <h2>Student you selected</h2>
-<%= @student.firstname %> <%= @student.lastname %> 
+<%=render partial: 'student', object: @student %>
